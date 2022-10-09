@@ -1,0 +1,28 @@
+interactions/TapTheButton.java
+ interactions.TapTheButton
+exceptions/ElementDisabledException.java
+ exceptions.ElementDisabledException
+exceptions/TheElementNotVisibleError.java
+ exceptions.TheElementNotVisibleError
+userinterfaces/HomePage.java
+ userinterfaces.HomePage
+exceptions/ErrorLoadTheInformationException.java
+ exceptions.ErrorLoadTheInformationException
+questions/ElementsAppearOnScreen.java
+ questions.ElementsAppearOnScreen
+exceptions/PropertiesDoesNotLoadException.java
+ exceptions.PropertiesDoesNotLoadException
+exceptions/LoginError.java
+ exceptions.LoginError
+exceptions/ElementNotFoundException.java
+ exceptions.ElementNotFoundException
+exceptions/ErrorComparingData.java
+ exceptions.ErrorComparingData
+exceptions/JsonReaderException.java
+ exceptions.JsonReaderException
+userinterfaces/loginpage/LoginPage.java
+ userinterfaces.loginpage.LoginPage
+questions/ItWasRedirectedToTheShoppingScreen.java
+ questions.ItWasRedirectedToTheShoppingScreen
+userinterfaces/homepage/StoreHomePage.java
+ userinterfaces.homepage.StoreHomePage
