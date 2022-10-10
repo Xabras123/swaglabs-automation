@@ -1,28 +1,48 @@
-interactions/TapTheButton.java
- interactions.TapTheButton
-exceptions/ElementDisabledException.java
- exceptions.ElementDisabledException
-exceptions/TheElementNotVisibleError.java
- exceptions.TheElementNotVisibleError
+model/entities/CheckoutInformationData.java
+ model.entities.CheckoutInformationData
+userinterfaces/shoppingcart/ShoppingCartPage.java
+ userinterfaces.shoppingcart.ShoppingCartPage
+tasks/purchaseproduct/ConfirmTheTransaction.java
+ tasks.purchaseproduct.ConfirmTheTransaction
+tasks/purchaseproduct/FillTheCheckoutInformationForm.java
+ tasks.purchaseproduct.FillTheCheckoutInformationForm
+model/entities/login/AuthenticationData.java
+ model.entities.login.AuthenticationData
 userinterfaces/HomePage.java
  userinterfaces.HomePage
-exceptions/ErrorLoadTheInformationException.java
- exceptions.ErrorLoadTheInformationException
-questions/ElementsAppearOnScreen.java
- questions.ElementsAppearOnScreen
-exceptions/PropertiesDoesNotLoadException.java
- exceptions.PropertiesDoesNotLoadException
-exceptions/LoginError.java
- exceptions.LoginError
-exceptions/ElementNotFoundException.java
- exceptions.ElementNotFoundException
-exceptions/ErrorComparingData.java
- exceptions.ErrorComparingData
-exceptions/JsonReaderException.java
- exceptions.JsonReaderException
+questions/transversal/AnErrorLabelAppears.java
+ questions.transversal.AnErrorLabelAppears
 userinterfaces/loginpage/LoginPage.java
  userinterfaces.loginpage.LoginPage
-questions/ItWasRedirectedToTheShoppingScreen.java
- questions.ItWasRedirectedToTheShoppingScreen
+model/entities/ErrorMessagesEnum.java
+ model.entities.ErrorMessagesEnum
+interactions/NavigateThroughMenu.java
+ interactions.NavigateThroughMenu
+model/entities/HeaderMenuEnum.java
+ model.entities.HeaderMenuEnum
+userinterfaces/shoppingcart/SuccessfulPurchasePage.java
+ userinterfaces.shoppingcart.SuccessfulPurchasePage
+userinterfaces/StoreHomeHeader.java
+ userinterfaces.StoreHomeHeader
+questions/purchaseproduct/ItWasRedirectedToTheSuccessfulPaymentScreen.java
+ questions.purchaseproduct.ItWasRedirectedToTheSuccessfulPaymentScreen
+questions/logintothaccount/ItWasRedirectedToTheShoppingScreen.java
+ questions.logintothaccount.ItWasRedirectedToTheShoppingScreen
+tasks/generalnavigation/NavigatesThroughTheHeaderMenu.java
+ tasks.generalnavigation.NavigatesThroughTheHeaderMenu
+userinterfaces/shoppingcart/ConfirmPurchasePage.java
+ userinterfaces.shoppingcart.ConfirmPurchasePage
+tasks/purchaseproduct/AddToTheShoppingCartTheItems.java
+ tasks.purchaseproduct.AddToTheShoppingCartTheItems
+interactions/TapTheButton.java
+ interactions.TapTheButton
+exceptions/TheElementNotVisibleError.java
+ exceptions.TheElementNotVisibleError
+questions/transversal/ElementsAppearOnScreen.java
+ questions.transversal.ElementsAppearOnScreen
+userinterfaces/shoppingcart/CheckoutInformationPage.java
+ userinterfaces.shoppingcart.CheckoutInformationPage
+tasks/logintotheaccount/FillTheLoginForm.java
+ tasks.logintotheaccount.FillTheLoginForm
 userinterfaces/homepage/StoreHomePage.java
  userinterfaces.homepage.StoreHomePage

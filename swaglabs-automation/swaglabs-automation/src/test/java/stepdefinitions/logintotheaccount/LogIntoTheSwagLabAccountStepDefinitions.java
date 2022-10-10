@@ -11,10 +11,12 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
-import questions.ItWasRedirectedToTheShoppingScreen;
+import questions.logintothaccount.ItWasRedirectedToTheShoppingScreen;
+import questions.transversal.AnErrorLabelAppears;
 import tasks.logintotheaccount.FillTheLoginForm;
 import userinterfaces.HomePage;
 
+import static model.entities.ErrorMessagesEnum.LOCKED_USER_ACCOUNT;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -33,7 +35,13 @@ public class LogIntoTheSwagLabAccountStepDefinitions {
         OnStage.setTheStage(new OnlineCast());
     }
 
-
+    @Given("that the user logs into the SwagLabs with the username (.*) and the password (.*)")
+    public void thatTheUserLogsIntoTheSwagLabsWithTheUsernameStandard_userAndThePasswordSecret_sauce(String userName, String userPassword) {
+        theActorCalled("user").can(BrowseTheWeb.with(browser));
+        theActorInTheSpotlight().wasAbleTo(Open.browserOn(homePage));
+        AuthenticationData theAuthenticationData = new AuthenticationData(userName, userPassword);
+        theActorInTheSpotlight().attemptsTo(FillTheLoginForm.with(theAuthenticationData));
+    }
 
     @Given("that the user is on the SwagLabs login screen")
     public void thatTheUserIsOnTheSwagLabsLoginScreen() {
@@ -51,6 +59,12 @@ public class LogIntoTheSwagLabAccountStepDefinitions {
     @Then("the user should see it was redirected to the store page")
     public void theUserShouldSeeItWasRedirectedToTheStorePage() {
         theActorInTheSpotlight().should(seeThat(ItWasRedirectedToTheShoppingScreen.page()));
+    }
+
+
+    @Then("the user should see an error label on the login page stating that the account is locked")
+    public void theUserShouldSeeAnErrorLabelOnTheLoginPageStatingThatTheAccountIsLocked() {
+        theActorInTheSpotlight().should(seeThat(AnErrorLabelAppears.onScreen(LOCKED_USER_ACCOUNT.getValue())));
     }
 
 

@@ -1,10 +1,8 @@
-model/entities/login/AuthenticationData.java
- model.entities.login.AuthenticationData
-runners/logintotheaccount/LogIntoTheSwagLabAccount.java
- runners.logintotheaccount.LogIntoTheSwagLabAccount
-questions/logintotheaccount/ItWasRedirectedTo.java
- questions.logintotheaccount.ItWasRedirectedTo
-tasks/logintotheaccount/FillTheLoginForm.java
- tasks.logintotheaccount.FillTheLoginForm
+stepdefinitions/purchaseproduct/PurchaseProductStepDefinitions.java
+ stepdefinitions.purchaseproduct.PurchaseProductStepDefinitions
+runners/purchase_product/purchase_product/PurchaseProductRunner.java
+ runners.purchase_product.purchase_product.PurchaseProductRunner
 stepdefinitions/logintotheaccount/LogIntoTheSwagLabAccountStepDefinitions.java
  stepdefinitions.logintotheaccount.LogIntoTheSwagLabAccountStepDefinitions
+runners/logintotheaccount/LogIntoTheSwagLabAccountRunner.java
+ runners.logintotheaccount.LogIntoTheSwagLabAccountRunner
